@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="content/style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <div class="image__box">
+                <img id="img">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="image__upload">
+                <label for="upload">Upload</label>
+                <input id="upload" type="file">
+            </div>
+        </div>
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="contrast">Contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="brightness">Brightness</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="sepia">Sepia</label>
+                    <input type="range" id="sepia" min="0" max="200" value="0">
+                </li>
+                <li>
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+                </li>
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                </li>
+                <li>
+                    <label for="hue-rotate">Hue Rotate</label>
+                    <input type="range" id="hue-rotate" min="0" max="350" value="0">
+                </li>
+                <li>
+                    <a download="true" id="download">Download</a>
+                    <span id="reset">Reset</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="content/js/app.js"></script>
+</body>
+</html>
